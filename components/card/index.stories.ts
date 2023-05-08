@@ -1,5 +1,4 @@
-
-import type { Meta } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3';
 
 import Card from './index.vue';
 
@@ -9,3 +8,6 @@ const meta: Meta<typeof Card> = {
 };
 
 export default meta;
+type Story = StoryObj<typeof Card>;
+
+export const Primary: Story = {}
