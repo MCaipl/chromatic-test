@@ -2,7 +2,8 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  size: String
+  size: String,
+  form: String
 })
 
 const sizeClass = computed(() => {
@@ -10,9 +11,20 @@ const sizeClass = computed(() => {
     case 'md':
       return 'w-14 h-14'
     case 'lg':
-      return 'w-22 h-22'
+      return 'w-24 h-24'
+    case 'xl':
+      return 'w-32 h-32'
     default:
       return 'w-10 h-10'
+  }
+})
+
+const formClass = computed(() => {
+  switch(props.form) {
+    case 'rounded':
+      return 'rounded'
+    default:
+      return 'rounded-full'
   }
 })
 
@@ -20,7 +32,6 @@ const sizeClass = computed(() => {
 
 <template>
 <div class="relative">
-  <img class="rounded-full" src="http://placekitten.com/300/300" alt="" :class="[sizeClass]">
-  <!-- <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span> -->
+  <img src="http://placekitten.com/300/300" alt="" :class="[sizeClass, formClass]">
 </div>
 </template>

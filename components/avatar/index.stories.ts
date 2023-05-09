@@ -22,3 +22,17 @@ export const Lg: Story = {
     size: 'lg'
   }
 }
+
+export const Xl: Story = {
+  args: {
+    size: 'xl'
+  }
+}
+
+export const XlRounded: Story = {
+  args: {
+    form: 'rounded',
+    size: 'xl'
+  }
+}
+
