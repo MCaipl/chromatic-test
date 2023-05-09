@@ -10,7 +10,7 @@ const sizeClass = computed(() => {
     case 'md':
       return 'w-14 h-14'
     case 'lg':
-      return 'w-24 h-24'
+      return 'w-22 h-22'
     default:
       return 'w-10 h-10'
   }
