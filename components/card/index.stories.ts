@@ -10,4 +10,17 @@ const meta: Meta<typeof Card> = {
 export default meta;
 type Story = StoryObj<typeof Card>;
 
-export const Primary: Story = {}
+export const Default: Story = {
+  args: {
+    text: 'Card title',
+    description: 'Card description'
+  }
+}
+export const LongDescription: Story = {
+  args: {
+    ...Default.args, 
+    ...{
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum ligula tincidunt dui lacinia rhoncus. Aenean vulputate venenatis congue. Duis sollicitudin erat magna, nec sagittis libero facilisis vel.'
+    }
+  }
+}
