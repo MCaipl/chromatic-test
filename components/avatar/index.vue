@@ -15,7 +15,7 @@ const sizeClass = computed(() => {
     case 'xl':
       return 'w-32 h-32'
     default:
-      return 'w-10 h-10'
+      return 'w-12 h-12'
   }
 })
 
