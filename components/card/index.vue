@@ -30,9 +30,6 @@ const { text = "T", description = "A" } = defineProps<{
     <div
       class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] items-center justify-between rounded-full bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f]"
     >Text</div>
-    <div
-      class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] items-center justify-between rounded-full bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f]"
-    >Text</div>
   </div>
 </div>
 
