@@ -8,17 +8,31 @@ const { text = "T", description = "A" } = defineProps<{
 </script>
 
 <template>
-<div class="block shadow max-w-[22rem] bg-slate-600 rounded-lg">
+<div class="block shadow-xl max-w-[22rem] rounded-lg">
   <a href="">
     <img
-      class="rounded-t-lg"
-      src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+      class="rounded-lg aspect-video object-cover"
+      src="/img/snow.jpg"
       alt="" 
     />
   </a>
-  <div class="p-4">
-    <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">{{ text }}</h5>
-    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">{{ description }}</p>
+  <div class="flex p-4 space-x-2">
+    <div class="flex-none">
+      <img src="http://placekitten.com/300/300" class="w-8 h-8 rounded-full">
+    </div>
+    <div class="grow space-y-0.5">
+      <h5 class="text-xl font-medium leading-tight">{{ text }}</h5>
+      <p class="text-base line-clamp-3" >{{ description }}</p>
+    </div>
+  </div>
+
+  <div class="flex p-4">
+    <div
+      class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] items-center justify-between rounded-full bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f]"
+    >Text</div>
+    <div
+      class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] items-center justify-between rounded-full bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f]"
+    >Text</div>
   </div>
 </div>
 
