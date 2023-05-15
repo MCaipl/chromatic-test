@@ -32,6 +32,6 @@ const formClass = computed(() => {
 
 <template>
 <div class="relative">
-  <img src="http://placekitten.com/300/300" alt="" :class="[sizeClass, formClass]">
+  <img src="/img/avatar.jpg" alt="" :class="[sizeClass, formClass]">
 </div>
 </template>

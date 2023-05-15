@@ -13,7 +13,8 @@ type Story = StoryObj<typeof Card>;
 export const Default: Story = {
   args: {
     text: 'Card title',
-    description: 'Card description'
+    description: 'Card description',
+    avatar: false
   }
 }
 export const LongDescription: Story = {
@@ -21,6 +22,33 @@ export const LongDescription: Story = {
     ...Default.args, 
     ...{
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum ligula tincidunt dui lacinia rhoncus. Aenean vulputate venenatis congue. Duis sollicitudin erat magna, nec sagittis libero facilisis vel.'
+    }
+  }
+}
+
+export const WithAvatar: Story = {
+  args: {
+    ...Default.args, 
+    ...{
+      avatar: true
+    }
+  }
+}
+
+export const WithTag: Story = {
+  args: {
+    ...Default.args, 
+    ...{
+      tags: [{name: 'Tag 1'}]
+    }
+  }
+}
+
+export const WithMulitpleTags: Story = {
+  args: {
+    ...Default.args, 
+    ...{
+      tags: [{name: 'Tag 1'},{name: 'Tag 2' }, {name: 'Tag 3' }]
     }
   }
 }
