@@ -9,7 +9,7 @@ const props = defineProps({
 const sizeClass = computed(() => {
   switch(props.size) {
     case 'md':
-      return 'w-14 h-14'
+      return 'w-12 h-12'
     case 'lg':
       return 'w-24 h-24'
     case 'xl':
