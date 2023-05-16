@@ -31,7 +31,7 @@ const { text = "T", description = "A", avatar = false } = defineProps<{
       <p class="text-base line-clamp-3" >{{ description }}</p>
     </div>
   </div>
-
+  <div>Some random text</div>
   <div class="flex p-4" v-if="tags?.length > 0">
     <div v-for="tag in tags"
       class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] items-center justify-between rounded-full bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f]"
